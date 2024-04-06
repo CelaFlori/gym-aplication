@@ -4,7 +4,7 @@
 }
 
 .left-h {
-  padding: 18rem;
+  padding: 2rem;
   padding-top: 1.5rem;
   flex: 3;
   display: flex;
@@ -177,5 +177,5 @@
 
 .calories div :nth-child(2){
   color: white;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
