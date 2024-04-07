@@ -1,5 +1,6 @@
 import './Programs.css'
-import { programsData } from "./src/data/programsData";
+import { programsData } from "../../data/programsData";
+import RightArrow from '../../assets/rightArrow.png'
 
 export const Programs = () => {
     return(
@@ -9,10 +10,16 @@ export const Programs = () => {
                 <span>Programs</span>
                 <span className='stroke-text'>to shape you</span>
             </div>
-            <div className='progam-category'>
-                {programsData.map((program) => (
-                    <div className='category'>
+            <div className='programs-categories'>
+                {programsData.map((program, index) => (
+                    <div className='category' key={index}>
                         {program.image}
+                        <span>{program.heading}</span>
+                        <span>{program.details}</span>
+                        <div className='join-now'>
+                            <span>Join Now</span>
+                            <img src={RightArrow} alt=""/>
+                        </div>
                     </div>
                 ))}
             </div>
